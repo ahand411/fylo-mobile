@@ -1,0 +1,90 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, div, body, ol, ul, li,
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+ol, ul {
+  list-style: none;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Raleway', sans-serif;
+}
+@media (min-width: 48em) {
+  body {
+    flex-direction: row;
+    height: 100vh;
+  }
+}
+#pagecopy p {
+  font-family: 'Open Sans', sans-sans-serif;
+  font-size: .8em;
+  margin: 1em 0;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 1rem;
+  width: 100%;
+}
+@media (min-width: 48em) {
+  header {
+    position: static;
+  }
+}
+#left {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(45deg, hsl(243, 86%, 85%), hsl(243, 87%, 12%));
+}
+#right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2em;
+}
+@media (min-width: 48em) {
+  #left, #right {
+  width: 50vw;
+  }
+}
+ul {
+  display: flex;
+  list-style: none;
+  width: 150px;
+  justify-content: space-between;
+}
+label.hidden {
+  position: absolute;
+  left: -1000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+fieldset {
+  border-style: none;
+}
+button {
+  background-color: hsl(163, 95%, 43%);
+  border-radius: 3px;
+  border: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100px;
+  color: white;
+}
+#privacy {
+  display: flex;
+  align-self: end;
+  justify-content: flex-end;
+}
